@@ -1,15 +1,15 @@
 class Vbtnl < Formula
   desc "Публичные HTTPS-туннели к localhost"
   homepage "https://vbtnl.com"
-  version "main"
+  version "0.0.2"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/scooby87/vbtnl-releases/releases/download/v#{version}/vbtnl_#{version}_darwin_arm64.tar.gz"
-      sha256 "4fb99be3a0530659ff14c7c5e98f9af27fdc4b6c2c3e18af6242a31bac2008b3"
+      sha256 "f1bbeab3e272bf43e22cd39b43c805d4cbfbaaf4001296632e7d9c1ff780a049"
     else
       url "https://github.com/scooby87/vbtnl-releases/releases/download/v#{version}/vbtnl_#{version}_darwin_amd64.tar.gz"
-      sha256 "45e0b420d5ace4046caf306447288d1b62a28dcecce34626af764de02fc80baa"
+      sha256 "677ba02fef5a197defbab00c75c14c847516bb93f4765bce1521b38537fe81f9"
     end
   end
 
